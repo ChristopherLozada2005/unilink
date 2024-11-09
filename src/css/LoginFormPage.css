@@ -1,0 +1,132 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f9;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Se adapta a pantallas pequeñas */
+    max-width: 400px;
+    margin: 20px;
+}
+
+.logo {
+    width: 80%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+/* Botones */
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:first-child {
+    background-color: #ffffff;
+    color: #555;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:first-child:before {
+    content: url('https://img.icons8.com/color/16/000000/google-logo.png');
+    margin-right: 8px;
+}
+
+button:nth-child(2) {
+    background-color: #ffffff;
+    color: #555;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:nth-child(2):before {
+    content: url('https://img.icons8.com/ios-filled/16/000000/email.png');
+    margin-right: 8px;
+}
+
+/* Inputs */
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Enlaces */
+a {
+    color: #555;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Botón de acceso */
+.accesButton {
+    background-color: #4a90e2;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.accesButton:hover {
+    background-color: #3a78c2;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+        margin: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+        width: 70%; /* Ajusta el tamaño del logo para pantallas más pequeñas */
+        max-width: 120px; /* Limita aún más el tamaño en pantallas pequeñas */
+    }
+
+    button, .accesButton, input[type="email"], input[type="password"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    a {
+        font-size: 13px;
+    }
+}
