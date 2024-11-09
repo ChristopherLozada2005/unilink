@@ -14,8 +14,10 @@ function LoginFormPage(){
             />
         </nav>
         <form action="" className="container">
-            <button>Google</button>
-            <button>Correo Electrónico</button>
+            <button>Google</button> <br />
+            <button>Correo Electrónico</button> <br />
+
+            <input type="email" id="email" name="email"  placeholder="Correo" required /> <br />
 
         </form>
         </>
